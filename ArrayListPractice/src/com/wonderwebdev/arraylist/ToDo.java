@@ -1,15 +1,15 @@
 package com.wonderwebdev.arraylist;
 
-import java.util.List;
+import java.util.*;
 
 public class ToDo {
-	private List<String> toDo;
-	private ToDo data = new ToDo();
+	private List<String> toDo = new ArrayList<>();
+	
 
 	public ToDo(List<String> toDo, ToDo data) {
 		super();
 		this.toDo = toDo;
-		this.data = data;
+		
 	}
 
 	public ToDo() {

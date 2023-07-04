@@ -28,7 +28,7 @@ public class ToDoServiceImpl implements ToDoService {
 		}
 	}
 
-	@Override
+	
 	public void updateItem(int index, String newItem) throws IOException {
 
 		if (index >= 0 && index < data.getToDo().size()) {
@@ -41,11 +41,11 @@ public class ToDoServiceImpl implements ToDoService {
 
 	}
 
-	@Override
+	
 	public void removeItem(int index) throws IOException {
 		if (index >= 0 && index < data.getToDo().size()) {
 			data.getToDo().remove(index);
-			System.out.println("Item is deleted!");
+			System.out.println("Thank you! Item is deleted!");
 
 		} else {
 			System.out.println("Index out of bounds. No item was deleted.");
